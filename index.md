@@ -1,3 +1,8 @@
-# MATH 3733 Mathematical Computing
+---
+layout: default
+title: Home
+nav_order: 1
+permalink: /
+---
 
-Class notes
+# MATH 3733 Mathematical Computing
