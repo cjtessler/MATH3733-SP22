@@ -71,7 +71,7 @@ Arithmetic operators follow standard order of operation
 >>> 3 + 3
 6
 >>> (3 + 6) ** 2
-36
+81
 >>> 5 / 2
 2.5
 >>> 100 / 50 - 1
