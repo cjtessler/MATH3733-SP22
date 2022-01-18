@@ -42,16 +42,16 @@ On line 5, the program prints 6 because 43 cents is made using 1 quarter, 1 dime
 
 Due to certain limitations of [replit.com](replit.com), there is no automated testing available for this project. Regardless, you should still thoroughly test your program. Consider all of the different possible inputs and how they should be handled. Here are a few possible tests:
 
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `0.41` and press enter. Your program should output `4`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `0.01` and press enter. Your program should output `1`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `0.15` and press enter. Your program should output `2`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `1.60` and press enter. Your program should output `7`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `23` and press enter. Your program should output `92`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `4.2` and press enter. Your program should output `18`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `0` and press enter. Your program should output `0`.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `-1` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
-- Run your program as `python cash.py`, and wait for a prompt for input. Type in `foo` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
-- Run your program as `python cash.py`, and wait for a prompt for input. Do not type anything, and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `0.41` and press enter. Your program should output `4`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `0.01` and press enter. Your program should output `1`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `0.15` and press enter. Your program should output `2`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `1.60` and press enter. Your program should output `7`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `23` and press enter. Your program should output `92`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `4.2` and press enter. Your program should output `18`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `0` and press enter. Your program should output `0`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `-1` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `foo` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
+- Run your program as `python change.py`, and wait for a prompt for input. Do not type anything, and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 
 **Make sure your program behaves as shown above. Your submission might be autograded locally.**
 
