@@ -83,7 +83,7 @@ There is no automated testing. Regardless, you should still thoroughly test your
 Enter your annual salary: 120000
 Enter the percent of your salary to save, as a decimal: .10
 Enter the cost of the home: 100000
-Enter the necessary down payment, as a decimal: .20
+Enter the necessary down payment percent, as a decimal: .25
 Enter the annual rate of return, as a decimal: 0.04
 It will take 183 months to save for the down payment.
 ```
@@ -95,7 +95,7 @@ It will take 183 months to save for the down payment.
 Enter your annual salary: 120000
 Enter the percent of your salary to save, as a decimal: .10
 Enter the cost of the home: 100000
-Enter the necessary down payment, as a decimal: .20
+Enter the necessary down payment percent, as a decimal: .25
 Enter the annual rate of return, as a decimal: 0.04
 It will take 105 months to save for the down payment.
 ```
@@ -119,7 +119,7 @@ Change owed: 1.42
 
 ``` text
 ~Project-1-Financial$ python change_challenge.py
-Change owed: 123.26
+Change owed: 123.27
 1 $100 dollar, 1 $20 dollar, 3 $1 dollar, 1 quarter, 2 penny
 ```
 
@@ -129,6 +129,8 @@ Any edits or clarifications to the project will be announced in class and shown 
 
 ### Tips
 
+- Try working out the computations by hand.
+- Try "Rubber Duck Debugging": [https://rubberduckdebugging.com/](https://rubberduckdebugging.com/)
 - If you type your program in `main.py` on Replit, you can use the run button instead of needing to use the shell.
 Make sure you submit your solution in the correct file though!
 - Try using the Debugger to avoid the need to use an excessive amount of print statements. Here is the documentation: [https://docs.replit.com/programming-ide/debugging](https://docs.replit.com/programming-ide/debugging).
