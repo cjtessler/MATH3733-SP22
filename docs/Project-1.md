@@ -1,5 +1,7 @@
 # Project 1: Financial
 
+*Read through the entire project description before beginning.*
+
 This project will consist of two parts and an optional bonus challenge. In part 1, you will write a program that calculates the minimum number of coins required to give the user change. In part 2, you will write a program to determine how long it will take you to save enough money to make a down payment on a house. There is also a challenge problem worth a 10% bonus on the project (1% of the overall course grade). Although first, we should review the collaboration policy for the course.
 
 ## Collaboration Policy
@@ -20,10 +22,10 @@ Write a program that calculates the minimum number of coins required to give a u
 5   6
 ```
 
-On line 1, the Python intpretter is invoke with the file to run.
-On line 2, the user is prompted and enters a negative number. The program rejects this input and reprompt the user, as seen on line 3.
-On line 3, the user is prompted and enters a string. The program rejects this inputs and reprompts the user, as seen on the line 4.
-On line 4, the user is prompted and enters 0.43.
+On line 1, the Python intpretter is invoke with the file to run.\
+On line 2, the user is prompted and enters a negative number. The program rejects this input and reprompt the user, as seen on line 3.\
+On line 3, the user is prompted and enters a string. The program rejects this inputs and reprompts the user, as seen on the line 4.\
+On line 4, the user is prompted and enters 0.43.\
 On line 5, the program prints 6 because 43 cents is made using 1 quarter, 1 dime, 1 nickel, and 3 pennies, i.e., 6 coins.
 
 ### Specificiation
@@ -55,7 +57,7 @@ Due to certain limitations of [replit.com](replit.com), there is no automated te
 
 ## Part 2: Saving
 
-It's time to buy a house! It is a big purchase so it might be some time before you can afford the down payment. Our goal in `savings.py` is to determine how long it will take you to save for a down payment. Write a program to calculate how many months it will take to save up enough money for a down payment.*
+It's time to buy a house! It is a big purchase so it might be some time before you can afford the down payment. Our goal in `saving.py` is to determine how long it will take you to save for a down payment. Write a program to calculate how many months it will take to save up enough money for a down payment.*
 
 ### Specification
 
@@ -87,6 +89,7 @@ It will take 183 months to save for the down payment.
 ```
 
 #### Test Case 2
+
 ``` text
 Project-1-Finacnial$ python savings.py
 Enter your annual salary: 120000
@@ -99,9 +102,9 @@ It will take 105 months to save for the down payment.
 
 There will be other test cases not shown here. **Although unlike part 1, you may assume the user will enter appropriate information so you do not need to validate input.**
 
-## Bonus Challenge: Change Challenge
+## Bonus: Change Challenge
 
-Successfully completing the bonus challenge will earn 10% bonus on project 1, which equates to 1% of the overall course grade. There is not penalty for not completing the challenge. There will be 10 tests cases, each worth 1%. Two of them are provided below.
+Successfully completing the bonus challenge will earn 10% bonus on project 1, which equates to 1% of the overall course grade. There is no penalty for not completing the challenge. There will be 10 tests cases, each worth 1%. Two of them are provided below.
 
 - In `change_challenge.py`, write a program that computes how change should be given for a user's input.
 - The denominations available are $100 bill, $50 bill, $20 bill, $10 bill, $5 bill, $1 bill, quarter, nickel, dime, and penny.
@@ -122,4 +125,15 @@ Change owed: 123.26
 
 ## Closing Remarks
 
-Any edits to the project description will be announced in class and shown here. Good luck and have fun!
+Any edits or clarifications to the project will be announced in class and shown in the changelog below. Good luck and have fun!
+
+### Tips
+
+- If you type your program in `main.py` on Replit, you can use the run button instead of needing to use the shell.
+Make sure you submit your solution in the correct file though!
+    - If you do this, you can write your own automated tests.
+- Try using the Debugger to avoid the need to use an excessive amount of print statements. Here is the documentation: [https://docs.replit.com/programming-ide/debugging](https://docs.replit.com/programming-ide/debugging).
+
+### Changelog
+
+-
