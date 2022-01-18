@@ -6,20 +6,25 @@ This project will consist of two parts and an optional bonus challenge. In part 
 
 Students may collaborate on the projects, meaning you're free to seek help from the professor, the internet, or your friends. Any code referenced on internet forums, Stack Overflow, tutorials, or any similar resource that is used to solve a problem should be cited in comments. If two or more students choose to solve a problem together, they are required to write code independently and note all the collaborators. Students cannot use the exact same code (for example, by dictating to each other). Students are not permitted to look at or copy each other’s code or code structure. Students are not permitted to share/send code to others. The official collaboration policy is that two students may discuss a solution together, but the code must be written separately by each student. No plagiarism or copying of solutions is allowed. Project submissions will be run against similarity software. **Violations of this policy will result in a zero on the project.**
 
-**Background on policy:** The first concern is what the students in the class learn. It is assumed that everyone in the class is here because they want to learn, and will behave in a manner consistent with that goal and their personal learning style. Much of the learning takes place while working on the projects or exercises. Working with other students often enhances the learning process. Keep in mind that collaborative learning works best when the students working together have roughly the same level of knowledge and skill so that each participant in the collaboration can contribute more or less equally to solving the problem. When one student is consistently showing another how to do things, it is not a true collaboration. When one student bases their solution on the completed work of another or on a found solution, little to no learning takes place. If students choose to lean heavily on the work of others, such students will be cheating themselves and will learn less. Moreover, while these students may end up with excellent grades on the problem sets, they will almost surely struggle with the exams, which account for 30% the final grade
-
+**Background on policy:** The first concern is what the students in the class learn. It is assumed that everyone in the class is here because they want to learn, and will behave in a manner consistent with that goal and their personal learning style. Much of the learning takes place while working on the projects or exercises. Working with other students often enhances the learning process. Keep in mind that collaborative learning works best when the students working together have roughly the same level of knowledge and skill so that each participant in the collaboration can contribute more or less equally to solving the problem. When one student is consistently showing another how to do things, it is not a true collaboration. When one student bases their solution on the completed work of another or on a found solution, little to no learning takes place. If students choose to lean heavily on the work of others, such students will be cheating themselves and will learn less. Moreover, while these students may end up with excellent grades on the problem sets, they will almost surely struggle with the exams, which account for 30% the final grade.
 
 ## Part 1: Change
 
-Write a program that calculates the minimum number of coins required to give a user change. Here is an example of the programs execcution:
+Write a program that calculates the minimum number of coins required to give a user change. Here is an example of the program's execcution:
 
 ``` text
-1  Project-1-Finacnial$ python change.py
-2  Change owed: 0.42
-3  5
+1   Project-1-Finacnial$ python change.py
+2   Change owed: -0.20
+3   Change owed: hello
+4   Change owed: 0.43
+5   6
 ```
 
-In line 1, the Python intpretter is invoke with the file to run. In line 2, the user is prompted and enters 42. In line 3, the program prints 5 because 42 cents is made using 1 quarter, 1 dime, 1 nickel, and 2 pennies, i.e., 5 coins.
+On line 1, the Python intpretter is invoke with the file to run.
+On line 2, the user is prompted and enters a negative number. The program rejects this input and reprompt the user, as seen on line 3.
+On line 3, the user is prompted and enters a string. The program rejects this inputs and reprompts the user, as seen on the line 4.
+On line 4, the user is prompted and enters 0.43.
+On line 5, the program prints 6 because 43 cents is made using 1 quarter, 1 dime, 1 nickel, and 3 pennies, i.e., 6 coins.
 
 ### Specificiation
 
@@ -46,9 +51,11 @@ Due to certain limitations of [replit.com](replit.com), there is no automated te
 - Run your program as `python cash.py`, and wait for a prompt for input. Type in `foo` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 - Run your program as `python cash.py`, and wait for a prompt for input. Do not type anything, and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 
+**Make sure your program behaves as shown above. Your submission might be autograded locally.**
+
 ## Part 2: Saving
 
-It's time to buy a house! It is a big purchase so it might be some time before you can afford the down payment. Our goal in `savings.py` is to determine how long it will take you to save for a down payment. Write a program to calculate how many months it will take to save up enough money for a down payment. *
+It's time to buy a house! It is a big purchase so it might be some time before you can afford the down payment. Our goal in `savings.py` is to determine how long it will take you to save for a down payment. Write a program to calculate how many months it will take to save up enough money for a down payment.*
 
 ### Specification
 
@@ -65,7 +72,7 @@ You will want your main variables to be floats, so be sure to cast user inputs t
 
 ### Testing
 
-There is no automated testing. Regardless, you should still thoroughly test your program. Consider all of the different possible inputs and how they should be handled. Make sure your progoram prints results in the format shown below. Your submission might be autograded locally.
+There is no automated testing. Regardless, you should still thoroughly test your program. Consider all of the different possible inputs and how they should be handled. **Make sure your progoram prints results in the format shown below. Your submission might be autograded locally.**
 
 #### Test Case 1
 
@@ -115,4 +122,4 @@ Change owed: 123.26
 
 ## Closing Remarks
 
-Good luck and have fun!
+Any edits to the project description will be announced in class and shown here. Good luck and have fun!
