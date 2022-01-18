@@ -15,7 +15,7 @@ Students may collaborate on the projects, meaning you're free to seek help from 
 Write a program that calculates the minimum number of coins required to give a user change. Here is an example of the program's execcution:
 
 ``` text
-1   Project-1-Finacnial$ python change.py
+1   ~Project-1-Financial$ python change.py
 2   Change owed: -0.20
 3   Change owed: hello
 4   Change owed: 0.43
@@ -79,7 +79,7 @@ There is no automated testing. Regardless, you should still thoroughly test your
 #### Test Case 1
 
 ``` text
-Project-1-Finacnial$ python savings.py
+~Project-1-Financial$ python savings.py
 Enter your annual salary: 120000
 Enter the percent of your salary to save, as a decimal: .10
 Enter the cost of the home: 100000
@@ -91,7 +91,7 @@ It will take 183 months to save for the down payment.
 #### Test Case 2
 
 ``` text
-Project-1-Finacnial$ python savings.py
+~Project-1-Financial$ python savings.py
 Enter your annual salary: 120000
 Enter the percent of your salary to save, as a decimal: .10
 Enter the cost of the home: 100000
@@ -112,13 +112,13 @@ Successfully completing the bonus challenge will earn 10% bonus on project 1, wh
 - You do NOT need to account for plurality. E.g. "5 penny" is fine although "5 pennies" is gramatically correct.
 
 ``` text
-Project-1-Finacnial$ python change_challenge.py
+~Project-1-Financial$ python change_challenge.py
 Change owed: 1.42
 1 $1 dollar, 1 quarter, 1 dime, 1 nickel, and 2 penny
 ```
 
 ``` text
-Project-1-Finacnial$ python change_challenge.py
+~Project-1-Financial$ python change_challenge.py
 Change owed: 123.26
 1 $100 dollar, 1 $20 dollar, 3 $1 dollar, 1 quarter, 2 penny
 ```
@@ -131,7 +131,6 @@ Any edits or clarifications to the project will be announced in class and shown 
 
 - If you type your program in `main.py` on Replit, you can use the run button instead of needing to use the shell.
 Make sure you submit your solution in the correct file though!
-    - If you do this, you can write your own automated tests.
 - Try using the Debugger to avoid the need to use an excessive amount of print statements. Here is the documentation: [https://docs.replit.com/programming-ide/debugging](https://docs.replit.com/programming-ide/debugging).
 
 ### Changelog
