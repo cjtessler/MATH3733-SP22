@@ -17,7 +17,6 @@ Write a program that calculates the minimum number of coins required to give a u
 ``` text
 1   ~Project-1-Financial$ python change.py
 2   Change owed: -0.20
-3   Change owed: hello
 4   Change owed: 0.43
 5   6
 ```
@@ -34,9 +33,9 @@ On line 5, the program prints 6 because 43 cents is made using 1 quarter, 1 dime
 - Assume that the user will input their change in dollar (e.g., `0.50` and not `50 cents`
 - Assume that the only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
 - The user may enter a string, integer, or float.
-- The user should continually be asked for input until the user enters a valid input. 
-- If the user inputs a negative value or string, your program should re-prompt the user for a valid amount again and again until the user complies.
-- The output should be an integer. 
+- The user should continually be asked for input until the user enters a valid input.
+- If the user inputs a negative value, your program should re-prompt the user for a valid amount again and again until the user complies.
+- The output should be an integer.
 
 ### Testing
 
@@ -50,7 +49,6 @@ Due to certain limitations of [replit.com](replit.com), there is no automated te
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `4.2` and press enter. Your program should output `18`.
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `0` and press enter. Your program should output `0`.
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `-1` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
-- Run your program as `python change.py`, and wait for a prompt for input. Type in `foo` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 - Run your program as `python change.py`, and wait for a prompt for input. Do not type anything, and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 
 **Make sure your program behaves as shown above. Your submission might be autograded locally.**
