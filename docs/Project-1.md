@@ -17,15 +17,18 @@ Write a program that calculates the minimum number of coins required to give a u
 ``` text
 1   ~Project-1-Financial$ python change.py
 2   Change owed: -0.20
-4   Change owed: 0.43
-5   6
+3   Change owed: 
+4   Change owed: 1.001
+5   Change owed: 0.43
+6   6
 ```
 
 On line 1, the Python intpretter is invoke with the file to run.\
 On line 2, the user is prompted and enters a negative number. The program rejects this input and reprompt the user, as seen on line 3.\
-On line 3, the user is prompted and enters a string. The program rejects this inputs and reprompts the user, as seen on the line 4.\
-On line 4, the user is prompted and enters 0.43.\
-On line 5, the program prints 6 because 43 cents is made using 1 quarter, 1 dime, 1 nickel, and 3 pennies, i.e., 6 coins.
+On line 3, the user is prompted and presses enter without entering an input. The program rejects this input and reprompts the user, as seen on the line 4.\
+On line 4, the user is prompted and enters 1.001, which is an invalid change amount. the program rejects this input and reprompts the user as seen on line 5.\
+On line 5, the user is prompted and enters 0.43. The program accepts this input and complete the computation.
+On line 6, the program prints 6 because 43 cents is made using 1 quarter, 1 dime, 1 nickel, and 3 pennies, i.e., 6 coins.
 
 ### Specificiation
 
@@ -48,6 +51,7 @@ Due to certain limitations of [replit.com](replit.com), there is no automated te
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `23` and press enter. Your program should output `92`.
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `4.2` and press enter. Your program should output `18`.
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `0` and press enter. Your program should output `0`.
+- Run your program as `python change.py`, and wait for a prompt for input. Type in `1.001` and press the enter key. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 - Run your program as `python change.py`, and wait for a prompt for input. Type in `-1` and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 - Run your program as `python change.py`, and wait for a prompt for input. Do not type anything, and press enter. Your program should reject this input as invalid, as by re-prompting the user to type in another number.
 
@@ -135,4 +139,4 @@ Make sure you submit your solution in the correct file though!
 
 ### Changelog
 
--
+- 2022-01-18 9:00 PM: Added additional test case to Part 1 so we have 10 case. An invalid change amount should be rejected, e.g., `1.001`. Also, update program execution in Part 1 to demonstrate this case.
