@@ -1,3 +1,6 @@
+math: katex
+
+---
 # Day 04
 
 ## Announcements
