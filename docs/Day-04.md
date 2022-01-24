@@ -14,7 +14,7 @@ x = int(input())
 print(f"You entered {x}")
 ```
 
-## Chained Conditionals.
+## Chained Conditionals
 
 ```python
 # compare.py
@@ -35,7 +35,7 @@ print("I am done comparing!")
 
 No limit on number of branches.
 
-## Nested Execution.
+## Nested Execution
 
 Identation is important in Python as it creates blocks of code.
 
@@ -47,15 +47,15 @@ else:
         print('x is less than y')
     else:
         print('x is greater than y')
-		
+
 # Equivalently... 
 if x == y:
     print('x and y are equal')
 
 if x < y:
-		print('x is less than y')
+    print('x is less than y')
 else:
-		print('x is greater than y')
+    print('x is greater than y')
 ```
 
 The second approach above is preferred because it has less indentation.
@@ -72,7 +72,7 @@ if 0 < x < 10: # not available in all languages
     print('x is a positive single-digit number.')
 ```
 
-## Guessing Game.
+## Guessing Game
 
 ```python
 # guess.py
@@ -86,7 +86,7 @@ else:
         print("Nope!")
 ```
 
-## Iteration with `while` .
+## Iteration with `while`
 
 `while` loops are good when when we do not know long we need to wait
 
@@ -114,13 +114,13 @@ while n < 5:
 Use Ctrl + C on Windows or Cmd + C on Mac to KeyboardInterrupt execution.
 
 ```python
-n = 0		# n is a counter variable, and it and is declared outside of the loop
+n = 0   # n is a counter variable, and it and is declared outside of the loop
 while n < 5:
     print(n)
     n = n + 1
 ```
 
-## `break` 
+## `break`
 
 `break` is used to get out of a loop.
 
@@ -131,11 +131,11 @@ The following algorithm is using "exhaustive enumeration"... it's slow... and ex
 ``` python
 x = 1 
 while True:
-		print("Checking", x)
-		if x % 11 == 0 and x % 12 == 0: 
-				break 
-		x = x + 1 
-		
+    print("Checking", x)
+    if x % 11 == 0 and x % 12 == 0: 
+        break 
+    x = x + 1 
+
 print(x, 'is divisible by 11 and 12') 
 ```
 
@@ -150,19 +150,19 @@ x = 1
 encountered = 0
 
 while True:
-		print("Checking", x)
-		if x % 11 == 0 and x % 12 == 0: 
-				encountered += 1
-				
-				if encountered == 3:
-					break
-				
-		x = x + 1 
-		
+    print("Checking", x)
+        if x % 11 == 0 and x % 12 == 0: 
+            encountered += 1  
+
+            if encountered == 3:
+                break
+
+        x = x + 1 
+
 print(x, 'is divisible by 11 and 12') 
 ```
 
-## For Loops.
+## For Loops
 
 ```python
 for n in range(5):
@@ -177,8 +177,8 @@ for n in range(5):
 
 ```python
 for n in range(5):
-		if n == 4:
-				continue
+    if n == 4:
+        continue
     print(n)
 ```
 

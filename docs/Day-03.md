@@ -4,10 +4,10 @@
 
 - Exercises 00 through 02 are due tonight!
 - Read through Project 1 description
-	- You should should be able to complete Part 2 after we discuss `while` loops
-	- Part 1 has some sneaky bugs that might be easier to solve after we discuss **floating point errors** on Friday.
-	- Regardless, it is still a good idea to begin solving the problems.
-	- Try to work out the solution by hand first.
+  - You should should be able to complete Part 2 after we discuss `while` loops
+  - Part 1 has some sneaky bugs that might be easier to solve after we discuss **floating point errors** on Friday.
+  - Regardless, it is still a good idea to begin solving the problems.
+  - Try to work out the solution by hand first.
 
 ## Data Types
 
@@ -104,18 +104,18 @@ print(area)
 
 ```python
 # division returns a float
-print(4 / 2)        # 2.0, float
-print(3 / 2)        # 1.5, float
+print(4 / 2)    # 2.0, float
+print(3 / 2)    # 1.5, float
 
 # integer division returns an int by droppng the frational part
-print(4 // 2)       # 2, int
-print(3 // 2)       # 1, int
+print(4 // 2)   # 2, int
+print(3 // 2)   # 1, int
 
 # examples of modulo operator %
 # a % b -> remainder when a is divided by b
-print(3 % 2)        # 1			3 mod 2 = 1
-print(11 % 3)       # 2			11 mod 3 = 2
-print(20 % 7)				# 6
+print(3 % 2)        # 13 mod 2 = 1
+print(11 % 3)       # 11 mod 3 = 2
+print(20 % 7)		# 6
 ```
 
 ## Boolean Expressions
@@ -156,7 +156,7 @@ True
 >>>
 >>> print(x == y)
 False
->>> print(x != y)	# not equal
+>>> print(x != y)   # not equal
 True
 >>> print (x > y)
 False
@@ -236,5 +236,4 @@ elif x == 0:
     print(f"Good compromise! {x} is neither positive nor negative")
 else:
     print(f"fine... {x} is negative...")
-
 ```
