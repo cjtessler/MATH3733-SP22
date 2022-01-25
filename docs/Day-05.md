@@ -126,4 +126,4 @@ else:
 print(f"The algorithm took {num_guesses} guesses")
 ```
 
-This algorithm wll take 35,137 guesses to determine if 1,234,567,890 is a perfect square. Bisection search will take 51 steps - and actualy compute the value of the square root.
+This algorithm wll take 35,137 guesses to determine if 1,234,567,890 is a perfect square. Bisection search will take 51 guess - and actualy compute the value of the square root.
