@@ -50,9 +50,9 @@ else:
 # 0.9999999999999999 is not 1.0
 ```
 
-Another way we can avoid the error using **discretization**
+Another way we can avoid the error using **discretization**.
 
-> In applied mathematics, discretization is the process of transferring continuous functions, models, variables, and equations into discrete counterparts. This process is usually carried out as a first step toward making them suitable for numerical evaluation and implementation on digital computers
+> In applied mathematics, discretization is the process of transferring continuous functions, models, variables, and equations into discrete counterparts. This process is usually carried out as a first step toward making them suitable for numerical evaluation and implementation on digital computers.
 
 ``` python
 x = 0   # if you declare x as an int, you don't need to cast it below
@@ -95,11 +95,11 @@ What is is that decimal equivalent of the binary number `10011`? 1 + 2 + 16
 
 We can represent a decimal using the significant digits of a number and a exponent. For example 1.949 would be represented as the pair (1949, -3), which stands for $1949 \times 10^{-3}$.
 
-The number 0.625 (5/8) woud be represented by (101, -11), which is $5 \times 2^{-3}$
+The number 0.625 (5/8) woud be represented by (101, -11), which is $5 \times 2^{-3}$.
 
 What about 1/10 (0.1)? With four bits we could do 0.09375 (3/32) as (0011, -0101), which is $3 \times 2^{-5}$.
 
-In most implementations of Python use 53 bits of precision
+In most implementations of Python use 53 bits of precision.
 
 ## Finding The Sqaure Root
 
@@ -126,4 +126,4 @@ else:
 print(f"The algorithm took {num_guesses} guesses")
 ```
 
-This algorithm wll take 35,137 guesses to determine if 1,234,567,890 is a perfect square. Bisection search will take 51 guess - and actualy compute the value of the square root.
+This algorithm wll take 35,137 guesses to determine if 1,234,567,890 is a perfect square. Bisection search will take 51 guessues - and actualy compute the value of the square root.
