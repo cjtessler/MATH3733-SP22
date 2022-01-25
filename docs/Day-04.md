@@ -18,7 +18,6 @@ print(f"You entered {x}")
 
 ```python
 # compare.py
-
 x = 5
 y = 6
 
@@ -76,7 +75,6 @@ if 0 < x < 10: # not available in all languages
 
 ```python
 # guess.py
-
 target = 55
 guess = int(input("I am thinking of a number! Try to guess the number I'm thinking of: "))
 
@@ -104,11 +102,9 @@ print("That's it!")
 
 ```python
 # stuck.py
-
 n = 0
 while n < 5:
-        print(f"{n} is less than 5. You're stuck!)
-        
+        print(f"{n} is less than 5. You're stuck!)    
 ```
 
 Use Ctrl + C on Windows or Cmd + C on Mac to KeyboardInterrupt execution.
@@ -189,12 +185,10 @@ Compute the sum of the first 12,345,678 square integers.
 ### Solution
 
 ```python
-
 total = 0
 
 for i in range(12_345_678):
     total += i ** 2
 
 print(total)
-
 ```
