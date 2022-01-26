@@ -84,7 +84,7 @@ There is no automated testing. Regardless, you should still thoroughly test your
 ~Project-1-Financial$ python savings.py
 Enter your annual salary: 120000
 Enter the percent of your salary to save, as a decimal: .10
-Enter the cost of the home: 100000
+Enter the cost of the home: 1000000
 Enter the necessary down payment percent, as a decimal: .25
 Enter the annual rate of return, as a decimal: 0.04
 It will take 183 months to save for the down payment.
