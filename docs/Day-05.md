@@ -1,3 +1,7 @@
+---
+math: katex
+---
+
 # Day 05
 
 ## A Discussion about floats
