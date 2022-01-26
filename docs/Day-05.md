@@ -101,7 +101,7 @@ We can represent a decimal using the significant digits of a number and a expone
 
 The number 0.625 (5/8) woud be represented by (101, -11), which is $$5 \times 2^{-3}$$.
 
-What about 1/10 (0.1)? With four bits we could do 0.09375 (3/32) as (0011, -0101), which is $3 \times 2^{-5}$$.
+What about 1/10 (0.1)? With four bits we could do 0.09375 (3/32) as (0011, -0101), which is $$3 \times 2^{-5}$$.
 
 Most implementations of Python use 53 bits of precision.
 
