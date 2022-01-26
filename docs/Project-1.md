@@ -76,7 +76,7 @@ You will want your main variables to be floats, so be sure to cast user inputs t
 
 ### Testing
 
-There is no automated testing. Regardless, you should still thoroughly test your program. Consider all of the different possible inputs and how they should be handled. **Make sure your progoram prints results in the format shown below. Your submission might be autograded locally.**
+There is no automated testing. Regardless, you should still thoroughly test your program. Consider all of the different possible inputs and how they should be handled. **Make sure your program prints results in the format shown below. Your submission might be autograded locally.**
 
 #### Test Case 1
 
@@ -94,9 +94,9 @@ It will take 183 months to save for the down payment.
 
 ``` text
 ~Project-1-Financial$ python savings.py
-Enter your annual salary: 120000
-Enter the percent of your salary to save, as a decimal: .10
-Enter the cost of the home: 100000
+Enter your annual salary: 80000
+Enter the percent of your salary to save, as a decimal: .15
+Enter the cost of the home: 500000
 Enter the necessary down payment percent, as a decimal: .25
 Enter the annual rate of return, as a decimal: 0.04
 It will take 105 months to save for the down payment.
@@ -140,3 +140,4 @@ Make sure you submit your solution in the correct file though!
 ### Changelog
 
 - 2022-01-18 9:00 PM: Added additional test case to Part 1 so we have 10 case. An invalid change amount should be rejected, e.g., `1.001`. Also, update program execution in Part 1 to demonstrate this case.
+- 2022-01-26 1:40 PM: Corrected Part 2 Test Case 2. 
