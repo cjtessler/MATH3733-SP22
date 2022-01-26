@@ -87,21 +87,21 @@ else:
 
 Represent the number 302 using expanded notation.
 
-$(3 \times 10^2) + (0 \times 10^1) + (2 \times 10^0)$
+$$3 \times 10^2) + (0 \times 10^1) + (2 \times 10^0)$$
 
 A sequence of length $n$ can represent $10^n$ different numbers.
 
 Computers use *binary* (base 2). A binary number is represeneted by a sequence of digits each which is either 0 or 1. The digits of a binary number are often referred to as **bits**.
 
-$101_2 = (1 \times 2^2) + (0 \times 2^2) + (1 \times 1) = 5$
+$$101_2 = (1 \times 2^2) + (0 \times 2^2) + (1 \times 1) = 5$$
 
 What is is that decimal equivalent of the binary number `10011`? 1 + 2 + 16
 
-We can represent a decimal using the significant digits of a number and a exponent. For example 1.949 would be represented as the pair (1949, -3), which stands for $1949 \times 10^{-3}$.
+We can represent a decimal using the significant digits of a number and a exponent. For example 1.949 would be represented as the pair (1949, -3), which stands for $$1949 \times 10^{-3}$$.
 
-The number 0.625 (5/8) woud be represented by (101, -11), which is $5 \times 2^{-3}$.
+The number 0.625 (5/8) woud be represented by (101, -11), which is $$5 \times 2^{-3}$$.
 
-What about 1/10 (0.1)? With four bits we could do 0.09375 (3/32) as (0011, -0101), which is $3 \times 2^{-5}$.
+What about 1/10 (0.1)? With four bits we could do 0.09375 (3/32) as (0011, -0101), which is $$3 \times 2^{-5}$$.
 
 Most implementations of Python use 53 bits of precision.
 
