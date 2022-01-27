@@ -79,9 +79,9 @@ target = 55
 guess = int(input("I am thinking of a number! Try to guess the number I'm thinking of: "))
 
 if target == guess:
-        print("That's it!")
+    print("That's it!")
 else:
-        print("Nope!")
+    print("Nope!")
 ```
 
 ## Iteration with `while`
@@ -95,7 +95,7 @@ target = 55
 guess = int(input("I am thinking of a number! Try to guess the number I'm thinking of: "))
 
 while guess != target:
-        guess = int(input("Try again: "))
+    guess = int(input("Try again: "))
         
 print("That's it!")
 ```
@@ -104,7 +104,7 @@ print("That's it!")
 # stuck.py
 n = 0
 while n < 5:
-        print(f"{n} is less than 5. You're stuck!)    
+    print(f"{n} is less than 5. You're stuck!)    
 ```
 
 Use Ctrl + C on Windows or Cmd + C on Mac to KeyboardInterrupt execution.
@@ -147,11 +147,11 @@ encountered = 0
 
 while True:
     print("Checking", x)
-        if x % 11 == 0 and x % 12 == 0: 
-            encountered += 1  
+    if x % 11 == 0 and x % 12 == 0: 
+        encountered += 1  
 
-            if encountered == 3:
-                break
+        if encountered == 3:
+            break
 
         x = x + 1 
 
