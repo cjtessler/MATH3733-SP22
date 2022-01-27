@@ -1,8 +1,11 @@
+---
+math: katex
+---
 # Day 06
 
 ## Bisection Search
 
-We first use a bisection search to find the sqrt(16).
+We first use a bisection search to find the $$\sqrt{16}$$.
 
 <img src="../images/06-bisection_example.png" alt="06-bisection_example" style="zoom:50%;" />
 
@@ -48,7 +51,7 @@ print(guess, "is close to the square root of x")
 - (0+3) // 2 = 1
 - (0 +1) // 2 = 0
 
-He would use 7 eggs. Notice $\log_2(102) \approx 7$. 
+He would use 7 eggs. Notice $$\log_2(102) \approx 7$$.
 
 ## Functions and Scoping
 
