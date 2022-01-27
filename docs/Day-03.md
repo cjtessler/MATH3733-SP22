@@ -43,7 +43,7 @@ Appropriate data type can be **cast** to another data type using functions:
 - `float()`
 - `str()`
 
-## input.py.
+## input.py
 
 ```python
 your_name = input("what is your name?")
@@ -63,14 +63,14 @@ print(f"Next year you will be {older_age}.”)
 older_age = older_age + 1
 print(f"In two years you will be {older_age}.”)
 
-older_age += 1	# shorthand for older_age = older_age + 1
+older_age += 1  # shorthand for older_age = older_age + 1
 print(f"In three years you will be {older_age}.”)
 ```
 
-### A caution about input.
+### A caution about input
 
 ```python
->>> input = input("Enter your name: ")	# input is a function here
+>>> input = input("Enter your name: ")  # input is a function here
 Enter your name: Cody
 >>> input
 'Cody'
@@ -115,7 +115,7 @@ print(3 // 2)   # 1, int
 # a % b -> remainder when a is divided by b
 print(3 % 2)        # 13 mod 2 = 1
 print(11 % 3)       # 11 mod 3 = 2
-print(20 % 7)		# 6
+print(20 % 7)       # 6
 ```
 
 ## Boolean Expressions

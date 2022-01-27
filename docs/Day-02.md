@@ -4,7 +4,6 @@
 
 Demonstrate `print(“hello world”)` in interactive mode.
 
-
 ``` python
 >>> print(“hello world!”)
 hello world
@@ -14,7 +13,6 @@ hello world
 - We *call* a function and it performs actions
 - “Hello world” is a string (data type)
 - Let’s break the program. Below are a few examples.
-
 
 ``` python
 >>> print("Hello World"
@@ -97,7 +95,7 @@ print(first_name, last_name)
 # print function with sep argument
 print("Today's date is")
 print(1, 22, 2018, sep='/')
-print()	# adds an extra line
+print() # adds an extra line
 
 # f-strings are convenient for string interpolation
 print("My first name is ", first_name, ", and my last name is ", last_name)
@@ -116,7 +114,6 @@ radius = 10
 area = pi * (radius ** 2)
 print(area)
 ```
-
 
 ## Rules for variables
 
