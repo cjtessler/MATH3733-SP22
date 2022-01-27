@@ -1,3 +1,38 @@
+# Day 07
+
+
+## Modules
+
+A module is a file that contains a collection of related functions.
+
+``` python
+
+>>> import math
+>>> math
+<module 'math' (built-in)>
+>>> dir(math)
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+>>> sin(0)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    sin(0)
+NameError: name 'sin' is not defined
+>>> math.sin(0)
+0.0
+>>> math.pi
+3.141592653589793
+>>> math.sin(math.pi)
+1.2246467991473532e-16              # VERY small float
+>>> from math import sin, pi        # Removes need for dot notation
+>>> pi
+3.141592653589793
+>>> sin(pi)
+1.2246467991473532e-16
+>>> 
+```
+
+[https://docs.python.org/3/library/math.html](https://docs.python.org/3/library/math.html)
+
 ## Introduction to Turtle Module
 
 [https://www.reddit.com/r/Python/comments/7mo2l8/turtle_module_drawing_a_randomised_landscape/](https://www.reddit.com/r/Python/comments/7mo2l8/turtle_module_drawing_a_randomised_landscape/)
@@ -16,10 +51,11 @@ turtle.mainloop()
 bob.forward(100)
 bob.left(90)
 bob.forward(100)
-
 ```
 
-**Exercise:** Modify the program to draw a square.
+### Exercise 1
+
+Modify the program to draw a square.
 
 ```python
 import turtle
@@ -66,7 +102,9 @@ square(bob)
 # If you ever find yourself copying and pasting, encapsulate the code
 ```
 
-Add another parameter, named `length`, to square.
+### Exercise 2
+
+Add another parameter, named `length`, to `square()`.
 
 Modify the body so the length of the sides is `length`, and then modify the function call to provide a second argument.
 
@@ -89,6 +127,8 @@ square(bob, 1000)
 # Adding a parameter to a function is called generalization
 ```
 
+### Exercise 3
+
 Make a copy of `square` and change the name to `polygon`.
 
 Add another parameter named `n` and modify the body so it draws an n-sided regular polygon.
@@ -98,7 +138,7 @@ Recall the exterior angles of an n-sided polygon are 360/n degrees.
 ```python
 def polygon(t, n=4, length=10):
     '''Draws a polygon with n sides.
-	By default, it draws a square with side length 10.
+    By default, it draws a square with side length 10.
     t: Turtle object
     n: number of line segments
     length: length (in pixels) of each side
@@ -109,4 +149,91 @@ def polygon(t, n=4, length=10):
         t.left(angle)
 
 polygon(bob, n=11, length=100) # n and length are 'keyword arguments'
+```
+
+### Exercise 4
+
+Write a function called `circle` that takes a turtle `t`, and radius `r` , as parameters and draws an approximate circle by calling `polygon` with an appropriate length and number of sides.
+
+Test your function with a range of values for `r` .
+
+``` python
+import turtle
+from math import pi
+
+bob = turtle.Turtle()
+turtle.mainloop()
+
+# --snip--
+    
+def circle(t, r):
+        ''' Draws an approximated circle.'''
+    circumference = 2 * pi * r
+    n = 50
+    length = circumference / n
+    polygon(t, length, n)
+    
+  
+circle(bob, 10)
+circle(bob, 100)
+circle(bob, 1000)
+```
+
+One limitation of this solution is that `n` is constant. Large values of `n` yield poor approximations. We do not want to complicate the **interface** by adding more parameters.
+
+Choose an appropriate value of `n` depending on the circumference.
+
+``` python
+def circle(t, r):
+        ''' Draws an approximated circle.'''
+    circumference = 2 * pi * r
+    # n = (circumference / 3) + 3 to illustrate preconditions
+    n = int(circumference / 3) + 3	# adding three guarentees the polygon has at least 3 sides
+    length = circumference / n
+    polygon(t, length, n)
+```
+
+### Exercise 5
+
+Make a more general version of `circle` called `arc` that takes an additional parameter, angle, which determine what fraction of the circle to draw.
+
+`angle` is in units of degrees, so when `angle=360`, `arc` should draw a complete circle.
+
+```python
+def arc(t, r, angle):
+    arc_length = 2 * pi * r * (angle / 360)
+    n = int(arc_length / 3) + 1
+    step_length = arc_length / n
+    step_angle = float(angle) / n
+    
+    for i in range(n):
+        t.forward(step_length)
+        t.left(step_angle)
+```
+
+We have used the same code in multiple places.
+
+```python
+# Refactoring
+def polyline(t, n, length, angle):
+    for i in range(n):
+        t.forward(length)
+        t.left(angle)
+
+    
+def polygon(t, n, length):
+    angle = 360.0 / n
+    polyline(t, n, length, angle)
+    
+    
+def arc(t, r, angle):
+        arc_length = 2 * math.pi * r * angle / 360
+        n = int(arc_length / 3) + 1
+        step_length = arc_length / n
+        step_angle = float(angle) / n
+        polyline(t, n, step_length, step_angle)
+ 
+
+def circle(t, r):
+    arc(t, r, 360)
 ```
