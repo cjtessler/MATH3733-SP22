@@ -56,17 +56,17 @@ print(area_of_circle(4))
 
 The function `math.sin(x)` returns the sine of `x` radians. Review code intellisense docstring.
 
-Write a function `sin_of_radians(x)` that returns the sine of `x` degrees.
+Write a function `sin_of_degress(x)` that returns the sine of `x` degrees.
 
 Recall pi radians == 180 degrees.
 
 ``` python
 from math import sin, pi
 
-def sin_of_radians(x):
+def sin_of_degrees(x):
     rad = x * pi / 180 
     result = sin(rad)
     return result
 
-print(sin_of_radians(180))
+print(sin_of_degrees(180))
 ```
