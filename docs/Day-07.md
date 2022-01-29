@@ -6,7 +6,6 @@
 A module is a file that contains a collection of related functions.
 
 ``` python
-
 >>> import math
 >>> math
 <module 'math' (built-in)>
