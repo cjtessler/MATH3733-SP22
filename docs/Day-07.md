@@ -1,6 +1,5 @@
 # Day 07
 
-
 ## Modules
 
 A module is a file that contains a collection of related functions.
@@ -44,7 +43,7 @@ def area_of_circle(radius):
     return a
 
 # The following definition of the function is viable,
-# but the use of a temporary variable can make debugging easier.
+# but the use of a "temporary variable" can make debugging easier.
 def area_of_circle(radius):
     return math.pi * radius ** 2
 
