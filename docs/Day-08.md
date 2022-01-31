@@ -12,6 +12,7 @@ import turtle
 bob = turtle.Turtle()
 print(bob)
 turtle.mainloop()
+bob.shape("turtle")
 
 # objects have methods, which is just a function attached to an object
 bob.forward(100)
@@ -52,20 +53,19 @@ for i in range(4):
 Write a function called square that takes a parameter named `t`, which is a turtle.
 
 ```python
+# Wrapping a piece of code up in a function is called encapsulation.
+# Attaches name to code, which serves as a kind of documentation.
+# Allows easy code reuse
+# If you ever find yourself copying and pasting, encapsulate the code
 def square(t):
     '''Draws a square with sides of a given length
-
-    Returns the Turtle to the starting position and location.
+    The Turtle ends at the starting location.
     '''
     for i in range(4):
         t.forward(100)
         t.left(90)
 
 square(bob)
-# Wrapping a piece of code up in a function is called encapsulation.
-# Attaches name to code, which serves as a kind of documentation.
-# Allows easy code reuse
-# If you ever find yourself copying and pasting, encapsulate the code
 ```
 
 ### Exercise 2
@@ -77,6 +77,7 @@ Modify the body so the length of the sides is `length`, and then modify the func
 Run the program again. Test your program with a range of values for length.
 
 ```python
+# Adding a parameter to a function is called generalization
 def square(t, length):
     '''Draws a square with sides of a given length
 
@@ -86,11 +87,9 @@ def square(t, length):
         t.forward(length)
         t.left(90)
 
-square(bob, 100)
 square(bob, 10)
+square(bob, 100)
 square(bob, 1000)
-
-# Adding a parameter to a function is called generalization
 ```
 
 ### Exercise 3
@@ -109,7 +108,7 @@ def polygon(t, n=4, length=10):
     n: number of line segments
     length: length (in pixels) of each side
     '''
-    angle = 360.0 / n
+    angle = 360 / n
     for i in range(n):
         t.forward(length)
         t.left(angle)
@@ -133,11 +132,11 @@ turtle.mainloop()
 # --snip--
     
 def circle(t, r):
-        ''' Draws an approximated circle.'''
+    '''Draws an approximated circle.'''
     circumference = 2 * pi * r
     n = 50
-    length = circumference / n
-    polygon(t, length, n)
+    length_per_side = circumference / n
+    polygon(t, length_per_side, n)
     
   
 circle(bob, 10)
@@ -151,7 +150,7 @@ Choose an appropriate value of `n` depending on the circumference.
 
 ``` python
 def circle(t, r):
-        ''' Draws an approximated circle.'''
+	''' Draws an approximated circle.'''
     circumference = 2 * pi * r
     # n = (circumference / 3) + 3 to illustrate preconditions
     n = int(circumference / 3) + 3  # adding three guarentees the polygon has at least 3 sides
@@ -193,11 +192,11 @@ def polygon(t, n, length):
     
     
 def arc(t, r, angle):
-        arc_length = 2 * math.pi * r * angle / 360
-        n = int(arc_length / 3) + 1
-        step_length = arc_length / n
-        step_angle = float(angle) / n
-        polyline(t, n, step_length, step_angle)
+    arc_length = 2 * math.pi * r * angle / 360
+    n = int(arc_length / 3) + 1
+    step_length = arc_length / n
+    step_angle = float(angle) / n
+    polyline(t, n, step_length, step_angle)
  
 
 def circle(t, r):
