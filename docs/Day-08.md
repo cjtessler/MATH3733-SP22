@@ -6,7 +6,7 @@
 
 [https://docs.python.org/3/library/turtle.html](https://docs.python.org/3/library/turtle.html)
 
-**replit.com uses Python 2.7 for Turtle**'
+**replit.com uses Python 2.7 for Turtle**
 
 ```python
 import turtle
