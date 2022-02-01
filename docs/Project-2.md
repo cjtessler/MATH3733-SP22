@@ -225,7 +225,7 @@ Note that the (modified) linear search actually performed better in this case.
 
 You will need to implement an additional piece of functionalty and document how you implmented it in `README.md`. This is a markdown file, which is a common file format for documentation. Watch [Markdown Crash Course](https://youtu.be/HUBNt18RFbo?t=331) for a brief overview on how to format markdown document. You may choose to implement one of the following:
 
-- Implement a ***player-vs-player** mode where one user enters a number without the other play looking, hides it, and then prompts opponent
+- Implement a **player-vs-player** mode where one user enters a number without the other play looking, hides it, and then prompts opponent
 - Implement an option where the user can limit the number of guess until the guesser loses
   - This limit should be adjustable by the user and be able to be turned on and off
 - Implement an option where the user specifies a random in which the numbers will occur
