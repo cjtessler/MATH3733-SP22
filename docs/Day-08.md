@@ -1,3 +1,4 @@
+# Day 08
 
 ## Introduction to Turtle Module
 
@@ -48,8 +49,8 @@ We can do the same thing more concisely with a `for`  loop.
 
 ```python
 for i in range(4):
-	bob.forward(100)
-	bob.left(90)
+    bob.forward(100)
+    bob.left(90)
 ```
 
 Write a function called square that takes a parameter named `t`, which is a turtle.
@@ -102,7 +103,7 @@ Add another parameter named `n` and modify the body so it draws an n-sided regul
 Recall the exterior angles of an n-sided polygon are 360/n degrees.
 
 ```python
-DEGREES_IN_CIRCLE = 360.0	# The explicit float is necessary in Python 2
+DEGREES_IN_CIRCLE = 360.0   # The explicit float is necessary in Python 2
 
 def polygon(t, n=4, length=10):
     '''Draws a polygon with n sides.
@@ -152,11 +153,11 @@ One limitation of this solution is that `n` is constant. Large values of `n` yie
 Choose an appropriate value of `n` depending on the circumference.
 
 ``` python
-DEGREES_IN_CIRCLE = 360.0	# The explicit float is necessary in Python 2
-							# Division (/) does not automatically cast to float
+DEGREES_IN_CIRCLE = 360.0   # The explicit float is necessary in Python 2
+                            # Division (/) does not automatically cast to float
 
 def circle(t, r):
-	''' Draws an approximated circle.'''
+    ''' Draws an approximated circle.'''
     circumference = 2 * pi * r
     # n = (circumference / 3) + 3 to illustrate preconditions
     n = int(circumference / 3) + 3  # adding three guarentees the polygon has at least 3 sides
