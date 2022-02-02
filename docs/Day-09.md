@@ -14,7 +14,7 @@ def circle(t, r):
     polygon(t, length_per_side, n)
 ```
 
-### Exercise 5
+## Exercise 5
 
 Make a more general version of `circle` called `arc` that takes an additional parameter, `angle`, which determines what fraction of the circle to draw.
 
@@ -75,6 +75,45 @@ Function characteristics:
 
 Called a function creates a new **scope/frame/environment**.
 
-[Python Tutor - Scope Example 1](https://pythontutor.com/visualize.html#code=def%20f%28x%29%3A%0A%20%20%20%20y%20%3D%201%0A%20%20%20%20x%20%3D%20x%20%2B%20y%0A%20%20%20%20print%28%22x%20%3D%20%22,%20x%29%0A%20%20%20%20return%20x%0A%20%20%20%20%0Ax%20%3D%203%0Ay%20%3D%202%0Az%20%3D%20f%28x%29%0Aprint%28%22x%20%3D%22,%20x%29%0Aprint%28%22y%20%3D%22,%20y%29%0Aprint%28%22z%20%3D%22,%20z&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+[Python Tutor - Scope Example 1](https://pythontutor.com/visualize.html#code=def%20f%28x%29%3A%20%23%20name%20x%20used%20as%20formal%20parameter%20%0A%20%20%20%20y%20%3D%201%20%0A%20%20%20%20x%20%3D%20x%20%2B%20y%20%0A%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%20%20%20%20return%20x%20%0A%20%20%20%20%0Ax%20%3D%203%20%0Ay%20%3D%202%20%0Az%20%3D%20f%28x%29%20%23%20value%20of%20x%20used%20as%20actual%20parameter%20%0Aprint%28'z%20%3D',%20z%29%20%0Aprint%28'x%20%3D',%20x%29%20%0Aprint%28'y%20%3D',%20y%29%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-[Python Tutor - Scope Example 2](https://pythontutor.com/visualize.html#code=def%20f%28x%29%3A%0A%20%20%20%20%0A%20%20%20%20def%20g%28%29%3A%20%0A%20%20%20%20%20%20%20%20x%20%3D%20'abc'%20%0A%20%20%20%20%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%0A%20%20%20%20def%20h%28%29%3A%20%0A%20%20%20%20%20%20%20%20z%20%3D%20x%20%0A%20%20%20%20%20%20%20%20print%28'z%20%3D',%20z%29%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20x%20%3D%20x%20%2B%201%20%0A%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%20%20%20%20h%28%29%20%0A%20%20%20%20g%28%29%20%0A%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%20%20%20%20return%20g%20%0A%20%20%20%20%0Ax%20%3D%203%20%0Az%20%3D%20f%28x%29%20%0Aprint%28'x%20%3D',%20x%29%20%0Aprint%28'z%20%3D',%20z%29%20%0Az%28%29%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+``` python
+def f(x): # name x used as formal parameter 
+    y = 1 
+    x = x + y 
+    print('x =', x) 
+    return x 
+    
+x = 3 
+y = 2 
+z = f(x) # value of x used as actual parameter 
+print('z =', z) 
+print('x =', x) 
+print('y =', y) 
+```
+
+[Python Tutor - Scope Example 2](https://pythontutor.com/visualize.html#code=def%20f%28x%29%3A%20%0A%20%20%20%20def%20g%28%29%3A%20%0A%20%20%20%20%20%20%20%20x%20%3D%20'abc'%20%0A%20%20%20%20%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%0A%20%20%20%20def%20h%28%29%3A%20%0A%20%20%20%20%20%20%20%20z%20%3D%20x%20%0A%20%20%20%20%20%20%20%20print%28'z%20%3D',%20z%29%20%0A%0A%20%20%20%20x%20%3D%20x%20%2B%201%20%0A%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%20%20%20%20h%28%29%20%0A%20%20%20%20g%28%29%20%0A%20%20%20%20print%28'x%20%3D',%20x%29%20%0A%20%20%20%20return%20g%20%0A%0Ax%20%3D%203%20%0Az%20%3D%20f%28x%29%20%0Aprint%28'x%20%3D',%20x%29%20%0Aprint%28'z%20%3D',%20z%29%20%0Az%28%29%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+
+``` python
+def f(x): 
+    def g(): 
+        x = 'abc' 
+        print('x =', x) 
+
+    def h(): 
+        z = x 
+        print('z =', z) 
+
+    x = x + 1 
+    print('x =', x) 
+    h() 
+    g() 
+    print('x =', x) 
+    return g 
+
+x = 3 
+z = f(x) 
+print('x =', x) 
+print('z =', z) 
+z() 
+```
