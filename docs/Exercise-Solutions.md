@@ -96,7 +96,7 @@ def is_even(number):
         return False
 ```
 
-## Quadratic Formula
+## 18 Quadratic Formula
 
 ``` python
 import math
