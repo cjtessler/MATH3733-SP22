@@ -33,10 +33,10 @@ for i in range(n):
 
 ## 14 Sideways Triangle
 
-```
+``` python
 w = int(input())
 
-h = 2 * w -1
+h = 2 * w - 1
 for i in range(1, h+1):
     for j in range(w - abs(w-i)):
         print("#", end="")
