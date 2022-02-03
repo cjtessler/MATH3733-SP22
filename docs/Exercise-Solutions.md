@@ -31,6 +31,18 @@ for i in range(n):
     print()
 ```
 
+## 14 Sideways Triangle
+
+```
+w = int(input())
+
+h = 2 * w -1
+for i in range(1, h+1):
+    for j in range(w - abs(w-i)):
+        print("#", end="")
+    print()
+```
+
 ## 15 Favorite Book
 
 ``` python
