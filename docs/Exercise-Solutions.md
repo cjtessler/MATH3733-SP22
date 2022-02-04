@@ -112,3 +112,11 @@ def smaller_root(a, b, c):
 
     return x
 ```
+
+## 19 Turtle Drawing
+
+Write a void function (a function that returns `None`) to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units. (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+
+You might find it useful to review the lesson at [Learn Python the Right Way, Chapter 4](https://learnpythontherightway.com/chapter/chapter-4.html) and the [Official Turtle Documentation](https://docs.python.org/2.7/library/turtle.html) in order to see example of other methods necessary to recreate the drawing.
+
+![https://learnpythontherightway.com/chapter/Chapter-4/04-04-five_squares.png](https://learnpythontherightway.com/chapter/Chapter-4/04-04-five_squares.png)
