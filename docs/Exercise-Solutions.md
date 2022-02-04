@@ -125,10 +125,22 @@ You might find it useful to review the lesson at [Learn Python the Right Way, Ch
 
 ![https://learnpythontherightway.com/chapter/Chapter-4/04-04-five_squares.png](https://learnpythontherightway.com/chapter/Chapter-4/04-04-five_squares.png)
 
+### Solution
+
+...
+
 ## 20 Recursion
 
 ...
 
-## 21 Recursive Turtple
+## 21 Recursive Turtle
+
+### Instructions
+
+A Sierpinski triangle of order 0 is an equilateral triangle. An order 1 triangle can be drawn by drawing 3 smaller triangles (shown slightly disconnected here, just to help our understanding). Higher order 2 and 3 triangles are also shown. Draw Sierpinski triangles of any order input by the user.
+
+![https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png](https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png)
+
+### Solution
 
 ...
