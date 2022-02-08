@@ -137,10 +137,44 @@ You might find it useful to review the lesson at [Learn Python the Right Way, Ch
 
 ### Instructions
 
-A Sierpinski triangle of order 0 is an equilateral triangle. An order 1 triangle can be drawn by drawing 3 smaller triangles (shown slightly disconnected here, just to help our understanding). Higher order 2 and 3 triangles are also shown. Use a recurive function to draw Sierpinski triangles of order `n`, where `n` is a parameter of the recursive function.
+A Sierpinski triangle of order 0 is an equilateral triangle. An order 1 triangle can be drawn by drawing 3 smaller triangles (shown slightly disconnected here, just to help our understanding). Higher order 2 and 3 triangles are also shown. Draw Sierpinski triangles of any order input by the user.
 
 ![https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png](https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png)
 
-### Solution
+### Solution (Partial Solution)
 
-...
+``` python
+import turtle
+
+def recursive_triangles(t, n, length):  # Added length parameter
+    if n == 0:  # Base case
+        triangle(t, length)
+    else: 
+        # Draw first triangle at starting position (reduce n by one and length by half)
+
+        # Move to midpoint of bottom side
+
+        # Draw second triangle
+
+        # Move back to starting location
+
+        # Face alongside left side
+
+        # Move to middle of left side
+
+        # Face right to prepare for last triangle
+
+        # Draw top triangle
+
+        # Return to starting location
+
+
+def triangle(t, size):
+    for _ in range(3):
+        t.forward(size)
+        t.left(120.0)
+
+
+t = turtle.Turtle()
+recursive_triangles(t, 1, 300)
+```
