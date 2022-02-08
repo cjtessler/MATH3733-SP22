@@ -150,21 +150,21 @@ def recursive_triangles(t, n, length):  # Added length parameter
     if n == 0:  # Base case
         triangle(t, length)
     else: 
-        # Draw first triangle at starting position (reduce n by one and length by half)
+        # Draw first triangle USING RECURSIVE CALL at starting position (reduce n by one and length by half)
 
         # Move to midpoint of bottom side
 
-        # Draw second triangle
+        # Draw second triangle USING RECURSIVE CALL
 
         # Move back to starting location
 
         # Face alongside left side
 
-        # Move to middle of left side
+        # Move to midpoint of left side
 
         # Face right to prepare for last triangle
 
-        # Draw top triangle
+        # Draw top triangle USING RECURSIVE CALL
 
         # Return to starting location
 
