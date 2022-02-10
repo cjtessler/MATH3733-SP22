@@ -150,37 +150,41 @@ A Sierpinski triangle of order 0 is an equilateral triangle. An order 1 triangle
 ### Solution
 
 ``` python
-import turtle
-
 def recursive_triangles(t, n, length):  # Added length parameter
     if n == 0:  # Base case
         triangle(t, length)
-    else: 
-        # Draw first triangle USING RECURSIVE CALL at starting position (reduce n by one and length by half)
+    else:
+        # Draw first triangle at starting position (reduce n by one and length by half)
+        recursive_triangles(t, n-1, length / 2)
 
         # Move to midpoint of bottom side
+        t.forward(length/2)
 
-        # Draw second triangle USING RECURSIVE CALL
+        # Draw second triangle
+        recursive_triangles(t, n-1, length / 2)
 
         # Move back to starting location
+        t.bk(length/2)
 
         # Face alongside left side
+        t.left(60)
 
-        # Move to midpoint of left side
+        # Move to middle of left side
+        t.forward(length / 2)
 
         # Face right to prepare for last triangle
+        t.right(60)
 
-        # Draw top triangle USING RECURSIVE CALL
+        # Draw top triangle
+        recursive_triangles(t, n-1, length / 2)
 
         # Return to starting location
-
+        t.left(60)
+        t.back(length / 2)
+        t.right(60)
 
 def triangle(t, size):
     for _ in range(3):
         t.forward(size)
         t.left(120.0)
-
-
-t = turtle.Turtle()
-recursive_triangles(t, 1, 300)
 ```
