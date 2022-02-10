@@ -131,7 +131,13 @@ You might find it useful to review the lesson at [Learn Python the Right Way, Ch
 
 ## 20 Recursion
 
-...
+``` python
+def f(n, a, b):
+    if n == 0:
+        return 0
+    else:
+        return a + f(n-1, a + b, b)
+```
 
 ## 21 Recursive Turtle
 
@@ -141,7 +147,7 @@ A Sierpinski triangle of order 0 is an equilateral triangle. An order 1 triangle
 
 ![https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png](https://learnpythontherightway.com/chapter/Chapter-18/sierpinski.png)
 
-### Solution (Partial Solution)
+### Solution
 
 ``` python
 import turtle
