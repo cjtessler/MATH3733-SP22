@@ -134,42 +134,6 @@ print(chr(65)) # A
 print(chr(97)) # a
 ```
 
-## Reading Word Lists
+## Star Wars ASCII
 
-```python
-# Load words.txt from http://greenteapress.com/thinkpython2/code/words.txt
-fin = open('words.txt')
-
-# Read line
-print(fin.readline())
-print(fin.readline())
-
-# Remove \n
-line = fin.readline()
-word = line.strip()
-print(word)
-
-for line in fin:
-    word = line.strip()
-    print(word)
-    
-# Exercise: How many words contain a 'q'?
-# Fact: 'q' has a relative frequency of 0.095% in the English language
-def has_q(word):
-    if 'q' in word:
-        return True
-    # returns None
-    # bool(None) == False
-
-# count the words that contain 'q'
-q_counter = 0
-for line in fin:
-    word = line.strip()
-    if has_q(word):
-        q_counter += 1
-
-print('q counter:', q_counter)
-
-# Close file
-fin.close()
-```
+[https://youtu.be/Dgwyo6JNTDA](https://youtu.be/Dgwyo6JNTDA)
