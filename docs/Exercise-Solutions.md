@@ -1,5 +1,64 @@
 # Exercise Solutions
 
+## 01 More on `print()`
+
+``` python
+print('''Hello, I'm happy you decided to run this "Python" program!''')
+```
+
+## 02 Python as a Calculator
+
+``` python
+# Example
+# How many seconds are there in 2 minutes, 42 seconds?
+print(2 * 60 + 42) # this will print 162
+
+# Exercise 1
+# How many seconds are there in 2 hours, 42 minutes, 42 seconds?
+print((2 * 60 * 60) + (60 * 42) + 42)
+
+# Exercise 2
+# Write an expression that simplifies to 42.0 and 
+# uses the exponentiation, addition, subtraction, 
+# multiplication, and division operators.
+print(2 ** 5 + 11 - (1 / 1 * 1))     # This exercises will be manually checked
+```
+
+## 03 Sum of Three Numbers
+
+``` python
+a = int(input())
+b = int(input())
+c = int(input())
+
+print(a + b + c)
+```
+
+## 04 Hello!!!!!!!!!!!
+
+``` python
+# Obtain name from the user
+name = input()
+
+# Obtain a number from the user
+num = int(input())
+
+# Print the appropraite output:
+print("Hello, " + name + ("!" * num))
+```
+
+## 05 Print Digits
+
+## 06 Apple Sharing
+
+## 07 Parity
+
+## 08 Sticks and... Triangles
+
+## 09 Sum of Digits
+
+## 10 More on `range()`
+
 ## 11 Line
 
 ``` python
