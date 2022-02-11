@@ -127,7 +127,44 @@ You might find it useful to review the lesson at [Learn Python the Right Way, Ch
 
 ### Solution
 
-...
+``` python
+import turtle
+
+# Constants
+SQUARE_SIZE = 20
+SQUARE_DIST = SQUARE_SIZE + 20
+PEN_SIZE = 3
+BG_COLOR = "lightgreen"
+TURTLE_COLOR = "hotpink"
+
+def draw_square(t):
+    # TODO: Complete this function
+    for _ in range(4):
+        t.forward(20)
+        t.left(90)
+
+
+def main():
+    # TODO: Create the turtle
+    t = turtle.Turtle()
+    t.pensize(PEN_SIZE)
+    t.color(TURTLE_COLOR)
+    
+    # TODO: Change the background color
+    turtle.Screen().bgcolor(BG_COLOR)
+
+    # TODO: Draw the squares (Consider a loop)
+    for _ in range(5):
+        draw_square(t)
+        t.penup()
+        t.forward(SQUARE_DIST)
+        t.pendown()
+
+
+# DO NOT CHANGE ANYTHING BELOW THIS LINE
+if __name__ == "__main__":
+    main()
+```
 
 ## 20 Recursion
 
