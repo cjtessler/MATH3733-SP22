@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 14
+# Day 14: Lists
 
 ## Lists
 

@@ -7,8 +7,6 @@ permalink: /
 
 # MATH 3733 Mathematical Computing
 
-
-
 Day 01: Computing Basics, Arithmetic Operators
 
 Day 02: Variables

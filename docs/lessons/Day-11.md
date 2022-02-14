@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 11
+# Day 11: Strings
 
 ## Strings
 

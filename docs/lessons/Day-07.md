@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 07
+# Day 07: Modules
 
 ## Modules
 

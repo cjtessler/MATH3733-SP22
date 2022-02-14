@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 12
+# Day 12: Work Day
 
 Extended Project 2 deadline until Monday, February 14th, midnight.
 

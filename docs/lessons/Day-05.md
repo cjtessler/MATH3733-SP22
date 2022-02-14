@@ -3,7 +3,7 @@ math: katex
 parent: Lessons
 ---
 
-# Day 05
+# Day 05: Floating Point Error
 
 ## A Discussion about floats
 

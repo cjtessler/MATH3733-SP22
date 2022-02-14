@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 13
+# Day 13: More on Strings
 
 ## Immutability
 
