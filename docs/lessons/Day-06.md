@@ -3,7 +3,7 @@ math: katex
 parent: Lessons
 ---
 
-# Day 06
+# Day 06: Bisection Search
 
 ## Bisection Search
 

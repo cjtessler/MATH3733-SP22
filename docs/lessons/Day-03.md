@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 03
+# Day 03: Data Types, Input, Booleans, If
 
 ## Recommendations
 

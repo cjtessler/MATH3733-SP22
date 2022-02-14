@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 08
+# Day 08: Turtle
 
 ## Introduction to Turtle Module
 

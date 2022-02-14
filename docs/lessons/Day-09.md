@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 09
+# Day 09: More on Turtle, Scope
 
 One limitation of this solution is that `n` is constant. Large values of `n` yield poor approximations. We do not want to complicate the **interface** by adding more parameters.
 

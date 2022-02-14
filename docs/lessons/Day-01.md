@@ -1,8 +1,9 @@
 ---
 parent: Lessons
+nav_order: 1
 ---
 
-# Day 01
+# Day 01: Computing Terminology, Arithmetic Operators
 
 ## What is a "computer"?
 

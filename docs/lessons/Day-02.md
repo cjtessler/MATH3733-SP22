@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 02
+# Day 02: Variables
 
 ## Debugging
 
