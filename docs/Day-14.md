@@ -154,18 +154,18 @@ mylist = [9, 3, 11]
 mylist.sort() # modifies original list
 
 mylist = [9, 3, 11]
-print(sorted(mylist)) 	# returns a copy that is sorted
-print(mylist)			# sorted() does not modify original list
+print(sorted(mylist))   # returns a copy that is sorted
+print(mylist)           # sorted() does not modify original list
 
-mylist.reverse()		# modifies original list
+mylist.reverse()        # modifies original list
 print(mylist)
 
 ### Other methods
 mylist = [9, 3, 11]
 
 # index
-print(mylist.index(3)) 	# 1
-print(mylist.index(5))	# ValueError
+print(mylist.index(3))  # 1
+print(mylist.index(5))  # ValueError
 x = 3
 if x in mylist:
     print(x, "is at index", mylist.index(x))
@@ -221,8 +221,8 @@ def sum_list(mylist):
         total += i
     return total
 
-print(sum_list([1, 2, 3]))	# user-defined
-print(sum[1, 2, 3])			# built-in
+print(sum_list([1, 2, 3]))  # user-defined
+print(sum[1, 2, 3])         # built-in
 
 
 ### Nested Lists
