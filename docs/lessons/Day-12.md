@@ -1,3 +1,7 @@
+---
+parent: Lessons
+---
+
 # Day 12
 
 Extended Project 2 deadline until Monday, February 14th, midnight.

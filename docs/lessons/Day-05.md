@@ -1,5 +1,6 @@
 ---
 math: katex
+parent: Lessons
 ---
 
 # Day 05

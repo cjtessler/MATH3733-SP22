@@ -1,3 +1,7 @@
+---
+parent: Lessons
+---
+
 # Day 09
 
 One limitation of this solution is that `n` is constant. Large values of `n` yield poor approximations. We do not want to complicate the **interface** by adding more parameters.

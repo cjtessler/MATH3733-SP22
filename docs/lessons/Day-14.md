@@ -1,3 +1,7 @@
+---
+parent: Lessons
+---
+
 # Day 14
 
 ## Lists

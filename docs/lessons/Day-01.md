@@ -1,5 +1,8 @@
-# Day 01
+---
+parent: Lessons
+---
 
+# Day 01
 
 ## What is a "computer"?
 

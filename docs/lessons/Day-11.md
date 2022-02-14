@@ -1,3 +1,7 @@
+---
+parent: Lessons
+---
+
 # Day 11
 
 ## Strings
