@@ -1,3 +1,7 @@
+---
+parent: Lessons
+---
+
 # Day 15: More on Lists, Tuples, Comprehensions
 
 ## Removing elements
