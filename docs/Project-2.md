@@ -228,7 +228,7 @@ You will need to implement an additional piece of functionalty and document how 
 - Implement a **player-vs-player** mode where one user enters a number without the other play looking, hides it, and then prompts opponent
 - Implement an option where the user can limit the number of guess until the guesser loses
   - This limit should be adjustable by the user and be able to be turned on and off
-- Implement an option where the user specifies a random in which the numbers will occur
+- Implement an option where the user specifies a range in which the numbers will occur
   - This range should be adjustable by the user and be able to be turned on and off
 - Allow float and negative values in all game modes
   - You might want to consider rounding to decimal places
