@@ -49,15 +49,76 @@ print("Hello, " + name + ("!" * num))
 
 ## 05 Print Digits
 
+``` python
+n = input()
+
+tens = int(n) // 10
+ones = int(n) % 10
+
+print(tens, ones)
+```
+
 ## 06 Apple Sharing
+
+``` python
+N = int(input())
+K = int(input())
+
+print(K // N)
+print(K % N)
+```
 
 ## 07 Parity
 
+``` python
+n = int(input())
+
+if n % 2 == 0:
+    print("even")
+else:
+    print("odd")
+```
+
 ## 08 Sticks and... Triangles
+
+``` python
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a == 0 or b == 0 or c == 0:
+    print(False)
+elif a > (b + c) or b > (a + c) or c > (a + b):
+    print(False)
+else: 
+    print(True)
+```
 
 ## 09 Sum of Digits
 
+``` python
+# Read an integer:
+a = int(input())
+
+total = 0
+while a > 0:
+    rem = a % 10
+    total += rem
+    a= a // 10
+
+print(total)
+```
+
 ## 10 More on `range()`
+
+``` python
+for i in range(2, 9, 3):
+    print(i, end=" ")
+print()
+for i in range(20, -6, -5):
+    print(i, end=" ")
+print()
+```
 
 ## 11 Line
 
@@ -79,10 +140,7 @@ for i in range(5):
 ## 13 Half of a Square
 
 ``` python
-# Do NOT delete line 2
 n = int(input())
-
-# Write your loops below this line
 
 for i in range(n):
     for j in range(n-i):
@@ -176,7 +234,7 @@ def smaller_root(a, b, c):
 
 ### Instructions
 
-Write a void function (a function that returns `None`) to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units. 
+Write a void function (a function that returns `None`) to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units.
 
 Hint: Notice that the turtle has already moved away from the ending point of the last square when the program ends.
 
@@ -283,4 +341,86 @@ def triangle(t, size):
     for _ in range(3):
         t.forward(size)
         t.left(120.0)
+```
+
+## 22 String Slices
+
+``` python
+# Read a string:
+s = input()
+
+# 1. In the first line, print the third character of this string.
+print(s[2])
+
+# 2. In the second line, print the second to last character of this string.
+print(s[-2])
+
+# 3. In the third line, print the first five characters of this string.
+print(s[:5])
+
+# 4. In the fourth line, print all but the last two characters of this string.
+print(s[:-2])
+
+# 5. In the fifth line, print all the characters of this string with even indices (remember indexing starts at 0, so the characters are displayed starting with the first).
+print(s[0::2])
+
+# 6. In the sixth line, print all the characters of this string with odd indices (i.e. starting with the second character in the string).
+print(s[1::2])
+
+# 7. In the seventh line, print all the characters of the string in reverse order.
+print(s[::-1])
+
+# 8. In the eighth line, print every second character of the string in reverse order, starting from the last one.
+print(s[::-2])
+
+# 9. In the ninth line, print the length of the given string.
+print(len(s))
+```
+
+## 23 str.count() methood
+
+``` python
+print(s.count(" ") + 1)
+```
+
+## 24 Two Halves
+
+``` python
+s = input()
+
+l = len(s)
+
+first_half = s[:(l // 2) + 1]
+
+second_half = s[l // 2:]
+print(second_half + first_half)
+```
+
+## 25 String find methods
+
+``` python
+# Read a string:
+s = input()
+
+first_occurence = s.find("p")
+last_occurence = s.rfind("p")
+
+if first_occurence == -1:
+    print(-2)
+elif first_occurence == last_occurence:
+    print(-1)
+else:
+    print(s.find("p", first_occurence+1))
+```
+
+## 26 str.replace() method
+
+``` python
+print(s.replace("1", "one"))
+```
+
+## 27 Deleting a Character
+
+``` python
+print(s.replace("@", ""))
 ```
