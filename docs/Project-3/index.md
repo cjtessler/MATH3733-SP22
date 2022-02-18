@@ -1,6 +1,6 @@
 --- 
 layout: default
-title: Project 3
+title: Project 3 &#58 Wordy
 has_children: true
 has_toc: true
 ---
