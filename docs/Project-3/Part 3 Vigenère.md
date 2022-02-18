@@ -21,7 +21,7 @@ Note this cipher’s use of $k_j$ as opposed to just *k*. And if *k* is shorter 
 In other words, if Vigenère himself wanted to say `HELLO` to someone confidentially, using a keyword of, say, `ABC`, he would encrypt the `H` with a key of 0 (i.e., A), the E with a key of 1 (i.e., B), and the first L with a key of 2 (i.e., C), at which point he’d be out of letters in the keyword, and so he’d reuse (part of) it to encrypt the second L with a key of 0 (i.e., A) again, and the O with a key of 1 (i.e., B) again. And so he’d write `HELLO` as `HFNLP`.
 
 | **plaintext**    | H    | E    | L    | L    | O    |
-| ---------------- | ---- | ---- | ---- | ---- | ---- |
+| ---------------- |:----:|:----:|:----:|:----:|:----:|
 | **+ key**        | A    | B    | C    | A    | B    |
 | **(key as #)**   | 0    | 1    | 2    | 0    | 1    |
 | **= ciphertext** | H    | F    | N    | L    | P    |

@@ -17,7 +17,7 @@ The secrecy of this "cryptosystem" relied on only Caesar and the recipients know
 Unencrypted text is generally called *plaintext*. Encrypted text is generally called *ciphertext*. And the secret used is called a *key*.
 
 | **plaintext**    | H    | E    | L    | L    | O    |
-| ---------------- | ---- | ---- | ---- | ---- | ---- |
+| ---------------- |:----:|:----:|:----:|:----:|:----:|
 | **+ key**        | 1    | 1    | 1    | 1    | 1    |
 | **= ciphertext** | I    | F    | M    | M    | P    |
 
