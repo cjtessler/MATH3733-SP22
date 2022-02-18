@@ -1,5 +1,5 @@
 ---
-parent: Project 3
+parent: Project 3&#58 Wordy
 math: katex
 nav_order: 1
 ---
