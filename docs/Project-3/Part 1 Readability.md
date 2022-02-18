@@ -3,7 +3,7 @@ parent: Project 3
 nav_order: 1
 ---
 
-## Part 1: Readability
+# Part 1: Readability
 
 According to [Scholastic](https://www.scholastic.com/teachers/teaching-tools/collections/guided-reading-book-lists-for-every-level.html), E.B. White's *Charlotte's Web* is between a second- and fourth-grade reading level, and Lois Lowry's *The Giver* is between an eighth- and twelfth-grade reading level. What does it mean, though, for a book to be at a particular reading level?
 
@@ -47,7 +47,7 @@ Text: As the average number of letters and words per sentence increases, the Col
 Grade 12
 ```
 
-### Specification
+## Specification
 
 Design and implement a program, `readability`, that computes the Coleman-Liau index of text.
 
@@ -57,9 +57,9 @@ Design and implement a program, `readability`, that computes the Coleman-Liau in
 - Your program should print as output `Grade X` where `X` is the grade level computed by the Coleman-Liau formula, rounded to the nearest integer.
 - If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output `Grade 16+` instead of giving the exact index number. If the index number is less than 1, your program should output `Before Grade 1`.
 
-### Steps
+## Steps
 
-#### Getting User Input
+### Getting User Input
 
 Let's first write some  code that just gets some text input from the user, and prints it back out. Specifically, implement in `readability.py` a main function that prompts the user with `Text: ` using Python `input` function and then prints that same text using `print`. 
 
@@ -71,7 +71,7 @@ Text: In my younger and more vulnerable years my father gave me some advice that
 In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
 ```
 
-#### Letters
+### Letters
 
 Now that you've collected input from the user, let's begin to analyze that input by first counting the number of letters in the text. Consider letters to be uppercase or lowercase alphabetical character, not punctuation, digits, or other symbols.
 
@@ -85,7 +85,7 @@ Text: Alice was beginning to get very tired of sitting by her sister on the bank
 235 letters
 ```
 
-#### Words
+### Words
 
 The Coleman-Liau index cares not only about the number of letters but also about the number of words in a sentence. For the purpose of this problem, we'll consider any sequence of characters separated by a space to be a word (so a hyphenated word like "sister-in-law" should be considered one word, not three).
 
@@ -104,7 +104,7 @@ Text: It was a bright cold day in April, and the clocks were striking thirteen. 
 55 words
 ```
 
-#### Sentances
+### Sentances
 
 The last piece of information that the Coleman-Liau formula cares about, in addition to the number of letters and words, is the number of sentences. Determining the number of sentences can be surprisingly trickly. You might first imagine that a sentence is just any sequence of characters that ends with a period, but of course sentences could end with an exclamation point or a question mark as well. But of course, not all periods necessarily mean the sentence is over. For instance, consider the sentence below.
 
@@ -128,7 +128,7 @@ Text: When he was nearly thirteen, my brother Jem got his arm badly broken at th
 3 sentences
 ```
 
-#### Putting it All Together
+### Putting it All Together
 
 Now it's time to put all the pieces together! Recall that the Coleman-Liau index is computed using the formula:
 
@@ -142,13 +142,13 @@ Modify `main` in `readability.py` so that instead of outputting the number of le
 
 If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output "Grade 16+" instead of outputting an exact index number. If the index number is less than 1, your program should output "Before Grade 1".
 
-#### Walkthrough
+### Walkthrough
 
 The project mirrors the project done in Harvard's CS 50 course, but is ported to Python. You might find their walkthrough helpful, although it does reference some ideas specific to the C programming language.
 
 [Link to walkthrough](https://youtu.be/AOVyZEh9zgE)
 
-### How to Test Your Code
+## How to Test Your Code
 
 Try running your program on the following texts, to ensure you see the specified grade level. Be sure to copy only the text, no extra spaces.
 
