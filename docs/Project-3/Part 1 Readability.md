@@ -1,6 +1,5 @@
 ---
 parent: Project 3
-nav_order: 1
 ---
 
 # Part 1: Readability
