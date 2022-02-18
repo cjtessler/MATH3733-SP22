@@ -8,7 +8,7 @@ nav_order: 1
 
 For this problem, you’ll implement a program that behaves similarly to the popular Wordle daily word game.
 
-<pre>
+<pre style="background-color:LightGray">
 $ python wordle.py 5
 <span style="color:green">This is MyWordle</span>
 You have 6 tries to guess the 5-letter word I'm thinking of
@@ -55,7 +55,7 @@ Input a 5-letter word:
 
 At which point, the user should type in a 5-letter word. Of course, the user could well be stubborn, and we should make sure they’re following the rules:
 
-<pre>
+<pre style="background-color:LightGray">
 $ python wordle.py 5
 <span style="color:green">This is MyWordle</span>
 You have 6 tries to guess the 5-letter word I'm thinking of
@@ -104,7 +104,7 @@ print(GREEN"This is WORDLE"RESET"\n");
 
 Of course, unlike our example, you probably don’t want to print a newline after each character of the word (instead, you just want one newline at the end, also resetting the font color!), lest it end up looking like the below:
 
-<pre>
+<pre style="background-color:LightGray">
 Input a 5-letter word: games
 Guess 1: <span style="color:red">g</span>
 <span style="color:yellow">a</span>
