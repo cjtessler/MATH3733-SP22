@@ -1,6 +1,7 @@
 ---
 parent: Project 3
 math: katex
+nav_order: 1
 ---
 
 # Part 3 Vigenère
