@@ -1,3 +1,8 @@
+
+---
+parent: Lessons
+---
+
 # Day 16: Dictionaries and Memoization
 
 ## Dictionaries
