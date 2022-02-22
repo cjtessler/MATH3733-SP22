@@ -9,11 +9,11 @@ parent: Lessons
 
 We first use a bisection search to find the $$\sqrt{16}$$.
 
-<img src="../images/06-bisection_example.png" alt="06-bisection_example" style="zoom:50%;" />
+<img src="/images/06-bisection_example.png" alt="06-bisection_example" style="zoom:50%;" />
 
 In general, we search by taking the midpoint.
 
-<img src="../images/06-bisection_general.png" alt="06-bisection_general" style="zoom: 50%;" />
+<img src="/images/06-bisection_general.png" alt="06-bisection_general" style="zoom: 50%;" />
 
 Here is an implementation of the bisection search.
 
