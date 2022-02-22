@@ -1,4 +1,3 @@
-
 ---
 parent: Lessons
 ---
