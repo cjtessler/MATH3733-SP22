@@ -31,7 +31,7 @@ wherein $\mod 26$ here means "remainder when dividing by 26." This formula perha
 
 ## Specifications
 
-Write a function `caesar` that encrypts a message using Caesar's cipher.
+Write a function `caesar(text: str, k: int) -> str` that encrypts a message using Caesar's cipher.
 
 - The function should take two parameters, `message` and `k`, where `k` is the rotation.
 - The function should return the ciphertext.
