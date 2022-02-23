@@ -19,7 +19,7 @@ index = 0.0588 * L - 0.296 * S - 15.8
 
 where `L` is the average number of letters per 100 words in the text, and `S` is the average number of sentences per 100 words in the text.
 
-Let’s write a program called readability that takes a text and determines its reading level. For example, if user types in a line of text from Dr. Seuss, the program should behave as follows:
+Let’s write a program called `readability` that takes a text and determines its reading level. For example, if user types in a line of text from Dr. Seuss, the program should behave as follows:
 
 ``` text
 $ python readability.py
@@ -31,7 +31,7 @@ The text the user inputted has 65 letters, 4 sentences, and 14 words. 65 letters
 
 Let's try another one:
 
-```
+``` text
 $ python readability.py
 Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.
 Grade 5
@@ -65,7 +65,7 @@ Let's first write some  code that just gets some text input from the user, and p
 
 The program should behave per the below.
 
-``` text 
+``` text
 $ python readability.py
 Text: In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
 In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
@@ -106,7 +106,7 @@ Text: It was a bright cold day in April, and the clocks were striking thirteen. 
 
 ### Sentances
 
-The last piece of information that the Coleman-Liau formula cares about, in addition to the number of letters and words, is the number of sentences. Determining the number of sentences can be surprisingly trickly. You might first imagine that a sentence is just any sequence of characters that ends with a period, but of course sentences could end with an exclamation point or a question mark as well. But of course, not all periods necessarily mean the sentence is over. For instance, consider the sentence below.
+The last piece of information that the Coleman-Liau formula cares about, in addition to the number of letters and words, is the number of sentences. Determining the number of sentences can be surprisingly tricky. You might first imagine that a sentence is just any sequence of characters that ends with a period, but of course sentences could end with an exclamation point or a question mark as well. But of course, not all periods necessarily mean the sentence is over. For instance, consider the sentence below.
 
 ``` text
 Mr. and Mrs. Dursley, of number four Privet Drive, were proud to say that they were perfectly normal, thank you very much.
