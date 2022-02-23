@@ -28,7 +28,7 @@ In other words, if Vigenère himself wanted to say `HELLO` to someone confidenti
 
 ## Specification
 
-Write a function `vigenere(message: str, key: str) ->` that encrypts a message using Vigenère's cipher.
+Write a function `vigenere(message: str, key: str) -> str` that encrypts a message using Vigenère's cipher.
 
 - The function should take two parameters, `message` and `key`.
 - The function should return the ciphertext.

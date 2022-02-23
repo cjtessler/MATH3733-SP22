@@ -61,7 +61,7 @@ Design and implement a program, `readability`, that computes the Coleman-Liau in
 
 ### Getting User Input
 
-Let's first write some  code that just gets some text input from the user, and prints it back out. Specifically, implement in `readability.py` a main function that prompts the user with `Text: ` using Python `input` function and then prints that same text using `print`. 
+Let's first write some code that just gets some text input from the user, and prints it back out. Specifically, implement in `readability.py` a main function that prompts the user with `Text: ` using Python `input` function and then prints that same text using `print`. 
 
 The program should behave per the below.
 
