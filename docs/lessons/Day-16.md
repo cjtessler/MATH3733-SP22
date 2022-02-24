@@ -2,7 +2,7 @@
 parent: Lessons
 ---
 
-# Day 16: Dictionaries and Memoization
+# Day 16: Dictionaries 
 
 ## Dictionaries
 
