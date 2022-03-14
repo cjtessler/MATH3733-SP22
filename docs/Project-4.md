@@ -16,20 +16,20 @@ The point are distributed as follows:
 
 ## Submission
 
-Each part should be done in a separate project titled `[lastname]-p[x]`, where `lastname` and `x` and specific to you and the part you are working on. For example, I would title Part 1 `tessler-p1`. Share your project with `cjtessler@seu.edu` using ShareLaTeX's sharing option: [https://www.overleaf.com/learn/how-to/Sharing_a_project](https://www.overleaf.com/learn/how-to/Sharing_a_project)
+Each part should be done in a separate project titled `[lastname]-p[x]`, where `lastname` and `x` are specific to you and the part you are working on. For example, I would title Part 1 `tessler-p1`. Share your project with `cjtessler@seu.edu` using ShareLaTeX's sharing option by *Inviting named collabors*: [https://www.overleaf.com/learn/how-to/Sharing_a_project](https://www.overleaf.com/learn/how-to/Sharing_a_project)
 
 ## Part 1
 
-Review the tutorial from class: [Learn $\LaTeX$ in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes).
-Cite this and any extra sources used to complete Part 1 in the bibliography (Exercise 7).
+Review the tutorial from class: [Learn $$\LaTeX$$ in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes).
+Cite this and any additional sources used to complete Part 1 in the bibliography (Exercise 7).
 
-You can find hints and solutions to these exercises at [https://guides.nyu.edu/LaTeX/exercises](https://guides.nyu.edu/LaTeX/exercises). **Try the exercise and search the internet for general concepts before looking at hints or solutions.**
+You can find hints and solutions to these exercises at [https://guides.nyu.edu/LaTeX/exercises](https://guides.nyu.edu/LaTeX/exercises). **Try the exercises and search the internet for general concepts before looking at hints or solutions.**
 
 There are a few modifications to ensure the solutions are not copy and pasted. A submission that was copied and pasted will receive zero credit for part 1.
 
 ### Exercise 1
 
-Create adocument with the title Hello World, your name, and today's date. Include int he document the following text: **Hello World!** Today I am learning $$\LaTeX$$. The solution should look like this (but with today's date):
+Create adocument with the title Hello World, your name, and today's date. Include in the document the following text: **Hello World!** Today I am learning $$\LaTeX$$. The solution should look like this (but with today's date):
 
 ![ex1](../images/p4_ex1.png)
 
@@ -37,7 +37,7 @@ Create adocument with the title Hello World, your name, and today's date. Includ
 
 Add to the document you created in exercise 1 the following text:
 
-"$$\LaTeX$$ is a great program for writing math. I can write inline math such as $a^2 + b^2 = c^2$. I can also give equations their own space:
+"$$\LaTeX$$ is a great program for writing math. I can write inline math such as $$a^2 + b^2 = c^2$$. I can also give equations their own space:
 
 $$ \gamma^2 + \theta^2 = \omega^2 $$
 
@@ -56,6 +56,17 @@ First give the display environment equation from exercise 2 an equation number. 
 Now write Maxwell's equations (as seen below), use an align environment and align the equations at the = signs and at the equations names.
 
 ![ex3](../images/p4_ex3.png)
+
+#### Exercise 3 Hints
+
+- Did you include the amsmath package command, `\usepackage{amsmath}`?  Some symbols and advanced math environments such as align will not work with out it!
+- The equation environment, `\begin{equation}`, automatically puts you in display mode and includes equations numbers.  If you want to use this mode but don't want equation numbers use equation*
+- To create quotation marks in LaTeX use the symbol ` (the ~ key) twice on the left and use the ' key twice on the right.   Using " on the left and right will not work properly.
+- In the align environment you use the `&` to denote points of alignment.  If you want a second alignment point use `&&`.
+- If you are having trouble with spacing use around = use the command `\quad` this adds extra horizontal space.
+- When adding text in math mode you need to use the command `\text{}` where the text you want added is the argument.  This command tells LaTeX to use regular text at that location.
+- `\vec{}` will create vector notation. \partial will give you partial derivatives, and remember for fractions use `\frac{numerator}{denomonator}`.
+- If you are having trouble getting your parenthesis to look right use the command `\left(` and `\right)` this will automatically fit the parenthesis to the equation within.  This also works with  `\left[`, `\left{`, and `\left|`, but you always need a `\right` to go with it.
 
 ### Exercise 4
 
