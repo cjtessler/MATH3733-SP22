@@ -123,7 +123,7 @@ Read the Beamer tutorial: [https://www.overleaf.com/learn/latex/Beamer](https://
 
 Select a mathematical concept and create a short Beamer presentation (5-10 slides) covering a mathematical topic of your choice. It does not need to be specifically related to mathematical computing or computer science, but must be at least a concept explored in Calculus 1 or later.
 
-Each student must choose a unique topic. This will be done on a first-come-first-serve basis. Sign your name and type a brief description of your select topic in this Google Doc: [https://docs.google.com/document/d/1O7ZVRmYKZn9lYNoSnfGusxg7J6CVM6dIrU5IohGgWx8/edit?usp=sharing](https://docs.google.com/document/d/1O7ZVRmYKZn9lYNoSnfGusxg7J6CVM6dIrU5IohGgWx8/edit?usp=sharing).
+Each student must choose a unique topic. This will be done on a first-come-first-serve basis. Sign your name and type a brief description of your selected topic in this Google Doc: [https://docs.google.com/document/d/1O7ZVRmYKZn9lYNoSnfGusxg7J6CVM6dIrU5IohGgWx8/edit?usp=sharing](https://docs.google.com/document/d/1O7ZVRmYKZn9lYNoSnfGusxg7J6CVM6dIrU5IohGgWx8/edit?usp=sharing).
 
 While it is not required, you might find it interesting to explore and use the [TikZ package](https://www.overleaf.com/learn/latex/TikZ_package) to create one or two visuals for your presentation.
 
