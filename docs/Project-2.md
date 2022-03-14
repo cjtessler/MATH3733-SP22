@@ -1,4 +1,3 @@
-
 # Project 2: Guessing
 
 *Read through the entire project description before beginning.*
