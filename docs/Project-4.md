@@ -2,9 +2,9 @@
 math: katex
 ---
 
-# Project 4: $\LaTeX$
+# Project 4: $$\LaTeX$$
 
-This project consists of four parts. In Part 1, you will recreate a $\LaTeX$ document through a series of exercises. In Part 2, you will type up a current (or old assignment if not in another upper-division course current) that was handwritten. In Part 3, you will create a short Beamer slideshow on a mathematical topic of your choice. In part 4, you will record yourself giving the presentation from part 3. Various math faculty will watch the presentations and extra credit will be given to the top presentations.
+This project consists of four parts. In Part 1, you will recreate a $$\LaTeX$$ document through a series of exercises. In Part 2, you will type up a current (or old assignment if not in another upper-division course current) that was handwritten. In Part 3, you will create a short Beamer slideshow on a mathematical topic of your choice. In part 4, you will record yourself giving the presentation from part 3. Various math faculty will watch the presentations and extra credit will be given to the top presentations.
 
 The point are distributed as follows:
 
@@ -29,7 +29,7 @@ There are a few modifications to ensure the solutions are not copy and pasted. A
 
 ### Exercise 1
 
-Create adocument with the title Hello World, your name, and today's date. Include int he document the following text: **Hello World!** Today I am learning $\LaTeX$. The solution should look like this (but with today's date):
+Create adocument with the title Hello World, your name, and today's date. Include int he document the following text: **Hello World!** Today I am learning $$\LaTeX$$. The solution should look like this (but with today's date):
 
 ![ex1](../images/p4_ex1.png)
 
@@ -37,8 +37,10 @@ Create adocument with the title Hello World, your name, and today's date. Includ
 
 Add to the document you created in exercise 1 the following text:
 
-"$\LaTeX$ is a great program for writing math. I can write inline math such as $a^2 + b^2 = c^2$. I can also give equations their own space: 
+"$$\LaTeX$$ is a great program for writing math. I can write inline math such as $a^2 + b^2 = c^2$. I can also give equations their own space:
+
 $$ \gamma^2 + \theta^2 = \omega^2 $$
+
 The document should look like this:
 
 ![ex2](../images/p4_ex2.png)
