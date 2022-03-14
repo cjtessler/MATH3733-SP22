@@ -99,8 +99,8 @@ The typed document must...
 
 - be at least one page.
 - include at least 3 problems using mathematical notation.
-- include the typed problem.
-- include a reference to the textbook.
+- include the problem and student solution.
+- include a reference to the textbook in the bibliography.
 
 Also, take a picture of all pages of the handwritten assignment and include that in your ShareLaTeX project.
 
