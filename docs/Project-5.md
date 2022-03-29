@@ -35,7 +35,7 @@ Download and submit a PDF on MyFire.
 
 The `Experiments` section is worth 20 points. Full credit requires evidence of various experiments of each sorting programming with results provided in an organized manner.
 
-The `Answers` is worth 80 points:
+The `Answers` section is worth 80 points:
 
 - 5 points for each correctly identified algorithm
 - 15 points for each justification.
