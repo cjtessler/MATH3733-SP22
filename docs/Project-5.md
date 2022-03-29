@@ -4,7 +4,7 @@ In project 5, you will run four sorting programs to determine which algorithms t
 
 ## Instructions
 
-You are provided four programs, `sort1`, `sort2`, `sort3`, and `sort4`. Each of these programs implements a different sorting algorithm: bogosort, bubble sort, selection sort, or merge sort (though not necessarily in that order). Your task is to determine which sorting algorithm is used by each file.
+On [Replit](https://replit.com/~), you are provided four programs, `sort1`, `sort2`, `sort3`, and `sort4`. Each of these programs implements a different sorting algorithm: bogosort, bubble sort, selection sort, or merge sort (though not necessarily in that order). Your task is to determine which sorting algorithm is used by each file.
 
 - The programs are compiled C programs, so you will not be able to view the source code. To assess which sort implements which algorithm, run the programs on different lists of values.
 - Multiple `.txt` files are provided. These files contain `n` values, either reversed, shuffled, or sorted.
