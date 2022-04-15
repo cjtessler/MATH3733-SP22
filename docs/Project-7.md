@@ -10,7 +10,7 @@ Replit is capable of handling many different types of projects. So, feel free to
 
 ## Pre-project (Due Tuesday, April 19th)
 
-Research some possible projects. At this point, you have a solid foundation in Python so don't be afraid of loftier ideas. If you are unsure on what you want to do, try the following:
+Research some possible projects. At this point, you have a solid foundation in Python so don't be afraid of loftier ideas. Think of a problem you want to solve or a something you want to build, use a tutorial to learn the basics of any new library you meed to use, and then independently build your idea. Building your own project is worth dozens of tutorials. If you are unsure on what you want to do, try the following:
 
 1. Think of a problem you would like to solve.
 2. Research a topic that interests you.
@@ -18,8 +18,6 @@ Research some possible projects. At this point, you have a solid foundation in P
 4. Come talk to me.
 
 Write a 250 word (minimum) plan for your project. Include a clear specification of what you plan to build, links to any tutorials you may use, the features you plan to implement, and what you envision for your presentation. Feel free to use images, mockups, and/or whatever you deem appropriate to explain your goal. Your project will evolve as you write it, but it is important to have a clear goal before you begin coding. **Submit your plan on MyFire before Tuesday, April 19th, 11:59 PM.**
-
-Think of a problem you want to solve or a project you want to build, use a tutorial to learn the basics of any new library you meed to use, and then independently build your idea. Building your own project is worth dozens of tutorials.
 
 Here is a list of ideas and frameworks you can look into: [https://docs.google.com/document/d/1_D9k83syKltGZbj_Kr6p300SUxW5WD6vXOn_aig0k6g/edit?usp=sharing](https://docs.google.com/document/d/1_D9k83syKltGZbj_Kr6p300SUxW5WD6vXOn_aig0k6g/edit?usp=sharing)
 
@@ -86,6 +84,6 @@ Effort: Did the project require an appropriate effort on behalf of the student t
 ### Possible Deductions
 
 - Submitting uncited code: Up to 100 point deduction
-- Submitting a unmodified tutorial or some one else's code: up to 100 point deduction
+- Plargarism (submitting a tutorial or some one else's code claiming it as your own): up to 100 point deduction
 - Not submitting a plan on time: Up to 10 point deduction
 - Not submitting a screencast: Up to 20 point deduction
